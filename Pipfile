@@ -8,6 +8,7 @@ torch = "*"
 numpy = "*"
 matplotlib = "*"
 torchvision = "*"
+torchaudio = "*"
 
 [dev-packages]
 
