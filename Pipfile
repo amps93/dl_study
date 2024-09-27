@@ -9,6 +9,8 @@ numpy = "*"
 matplotlib = "*"
 torchvision = "*"
 torchaudio = "*"
+scikit-learn = "*"
+pandas = "*"
 
 [dev-packages]
 
