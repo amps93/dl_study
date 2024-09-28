@@ -12,6 +12,11 @@ torchaudio = "*"
 scikit-learn = "*"
 pandas = "*"
 nltk = "*"
+tensorflow = "*"
+keras = "*"
+kss = "*"
+konlpy = "*"
+spacy = "*"
 
 [dev-packages]
 
