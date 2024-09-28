@@ -11,6 +11,7 @@ torchvision = "*"
 torchaudio = "*"
 scikit-learn = "*"
 pandas = "*"
+nltk = "*"
 
 [dev-packages]
 
