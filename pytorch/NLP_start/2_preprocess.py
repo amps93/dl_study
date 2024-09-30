@@ -45,8 +45,8 @@ from konlpy.tag import Okt
 import numpy as np
 import matplotlib.pyplot as plt
 
-urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings.txt", filename="ratings.txt")
-data = pd.read_table('ratings.txt')  # 데이터프레임에 저장
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings.txt", filename="../NLP_basic/ratings.txt")
+data = pd.read_table('../NLP_basic/ratings.txt')  # 데이터프레임에 저장
 
 print(data[:10])
 
@@ -90,9 +90,9 @@ word_to_index['unk'] = 0
 
 # 기존의 훈련 데이터에서 각 단어를 고유한 정수로 부여하는 작업
 encoded = []
-for line in tokenized: #입력 데이터에서 1줄씩 문장을 읽음
+for line in tokenized:  # 입력 데이터에서 1줄씩 문장을 읽음
     temp = []
-    for w in line: #각 줄에서 1개씩 글자를 읽음
+    for w in line:  # 각 줄에서 1개씩 글자를 읽음
         try:
             temp.append(word_to_index[w])  # 글자를 해당되는 정수로 변환
         except KeyError:  # 단어 집합에 없는 단어일 경우 unk로 대체된다.
@@ -117,7 +117,7 @@ plt.show()
 
 # 가장 길이가 긴 리뷰의 길이는 62. 모든 리뷰의 길이를 62로 통일
 for line in encoded:
-    if len(line) < max_len: # 현재 샘플이 정해준 길이보다 짧으면
+    if len(line) < max_len:  # 현재 샘플이 정해준 길이보다 짧으면
         line += [word_to_index['pad']] * (max_len - len(line))  # 나머지는 전부 'pad' 토큰으로 채운다.
 
 print('리뷰의 최대 길이 : %d' % max(len(l) for l in encoded))

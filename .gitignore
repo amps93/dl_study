@@ -131,5 +131,10 @@ dmypy.json
 *.pdf
 *.csv
 *.txt
+*.gz
+*.txt
+*.xml
+eng_w2v
 
 /sample_code
+

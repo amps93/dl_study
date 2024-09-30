@@ -17,6 +17,9 @@ keras = "*"
 kss = "*"
 konlpy = "*"
 spacy = "*"
+black = "*"
+gensim = "*"
+gdown = "*"
 
 [dev-packages]
 
