@@ -135,6 +135,7 @@ dmypy.json
 *.txt
 *.xml
 eng_w2v
+*.pth
 
 /sample_code
 
