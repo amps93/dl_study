@@ -21,6 +21,7 @@ black = "*"
 gensim = "*"
 gdown = "*"
 kiwipiepy = "*"
+ipykernel = "*"
 
 [dev-packages]
 
