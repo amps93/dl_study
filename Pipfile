@@ -4,26 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-torch = "*"
 numpy = "*"
-matplotlib = "*"
+ipykernel = "*"
+torch = "*"
 torchvision = "*"
 torchaudio = "*"
-scikit-learn = "*"
-pandas = "*"
-nltk = "*"
-tensorflow = "*"
-keras = "*"
-kss = "*"
 konlpy = "*"
-spacy = "*"
-black = "*"
-gensim = "*"
-gdown = "*"
+scikit-learn = "*"
 kiwipiepy = "*"
-ipykernel = "*"
+matplotlib = "*"
+pandas = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
+python_full_version = "3.9.13"

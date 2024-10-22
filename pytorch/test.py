@@ -1,19 +1,5 @@
-from konlpy.tag import Komoran
-from kiwipiepy import Kiwi
-import time
+import torch
 
-k = Komoran()
-kiwi = Kiwi(num_workers=4)
-print(kiwi.num_workers)
-
-start = time.time()
-print(k.morphs('아빠가 방에 들어가신다'))
-print(time.time()-start)
-
-start = time.time()
-print(kiwi.analyze('아빠가 방에 들어가신다'))
-print(time.time()-start)
-
-start = time.time()
-print(kiwi.tokenize('아빠가 방에 들어가신다'))
-print(time.time()-start)
+USE_CUDA = torch.cuda.is_available()
+device = torch.device("cuda" if USE_CUDA else "cpu")
+print("cpu와 cuda 중 다음 기기로 학습함:", device)
