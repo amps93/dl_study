@@ -136,6 +136,7 @@ dmypy.json
 *.xml
 eng_w2v
 *.pth
-
+*.model
+*.vocab
 /sample_code
 
