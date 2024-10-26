@@ -17,6 +17,7 @@ pandas = "*"
 nltk = "*"
 sentencepiece = "*"
 tokenizers = "*"
+wget = "*"
 
 [dev-packages]
 
