@@ -135,8 +135,9 @@ dmypy.json
 *.txt
 *.xml
 eng_w2v
+*.pt
 *.pth
 *.model
 *.vocab
 /sample_code
-
+*.{jpg,png,zip,tar,pt,csv,pth,vocab,model}
